@@ -1,4 +1,5 @@
 require "str_cgregs32/version"
+require "str_cgregs32/greetings"
 
 module StrCgregs32
   def self.reversify(str)

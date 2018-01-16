@@ -1,9 +1,20 @@
 RSpec.describe StrCgregs32 do
+
+  subject { StrCgregs32 }
+
   it "has a version number" do
     expect(StrCgregs32::VERSION).not_to be nil
   end
 
   it "does something useful" do
-    expect(false).to eq(true)
+    let(:str) { 'My String' }
+
+    it 'reverses a string' do
+      expect(subject.reversify(str)).to eq('gnirtS yM')
+    end
+
+    it 'adds spaces' do
+      expect(subject.spacify(str, 1)).to eq('M y   S t r i n g')
+    end
   end
 end

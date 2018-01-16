@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Learning about gems'
   spec.description   = 'Learning how to publish a gem'
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/cgregs32/str_cgregs32"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
